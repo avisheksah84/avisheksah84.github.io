@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width,initial-scale=1.0">
+    <title>COURSE-TBC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?
+family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="Image"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html" target="_blank">COURSE</a></li>
+                    <li><a href="blog.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Courses</h1>
+    </section>
+
+    <!--course-->
+    <section class="course">
+        <h1>Courses we offer</h1>
+        <p>Quality education with collabration with most prestigious foreign degree.</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>BSc Computing</h3>
+                <p>The BSc (Hons) Computing Programme at The British College is run in partnership with Leeds Beckett
+                    University, UK. Students studying this course will gain highly sought-after skills in computer
+                    programming, database development, networking, website development, systems modelling, and computer
+                    security. This course is equivalent to BSc CSIT and BIT in Nepal.</p>
+            </div>
+            <div class="course-col">
+                <h3>ACCA</h3>
+                <p>British Professional College, owned by The British College Kathmandu offers the ACCA (Association of
+                    Chartered Certified Accountants) programme, the largest and fastest-growing international
+                    accountancy body, with over 527,000 students and 219,000 fully qualified members spread across 179
+                    countries worldwide.The qualification is designed to teach students the accounting knowledge,
+                    skills, and professional values to build a successful career across any sector. Join the global
+                    network with this qualification from a British Chartered body and become a finance professional that
+                    is sought-after to shape the future of business and accountancy. </p>
+            </div>
+            <div class="course-col">
+                <h3>BBA</h3>
+                <p>The BBA (Hons) Business and Management degree is multidisciplinary in nature and can lead to many
+                    possible career options, whether in private business or in the public sector. Our BBA course
+                    provides a holistic view of business management while aiming to help students develop detailed
+                    knowledge of the latest business and management practices. The course's participative and
+                    interactive teaching and learning methodologies will enlighten students with practical competencies
+                    necessary for achieving business success.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!--footer-->
+    <section class="footer">
+        <h4>Follow Us</h4>
+        <p>Get connected with us.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>Made by Avishek Sah</p>
+    </section>
+
+    <!--javascript for mobile-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width,initial-scale=1.0">
+    <title>ABOUT-TBC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?
+family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="Image"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html" target="_blank">COURSE</a></li>
+                    <li><a href="blog.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <!--about us content-->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>NEPAL's LEADING COLLEGE</h1>
+                <p>Founded in 2011, The British College offers world-class education for aspiring students in Nepal to
+                    gain internationally-recognised qualifications from their two partner British Universities: the
+                    University of the West of England (UWE) and Leeds Beckett University (LBU). <br>We have successfully
+                    established a distinctive identity as the pioneering global college in Nepal and offer reputed UK
+                    degrees and courses that are relevant to the current job market, and enhance the employability of
+                    each and every student.
+                    <br>Our aim is to provide students with a global learning experience and worldwide opportunities. We
+                    are further defined by our local-to-global approach in the provision of our degrees and courses
+                    which are staffed by tutors and administrative personnel from the UK and Nepal. In this way, the
+                    College provides premium education that compels students and staff to be globally-minded - a notion
+                    which is further encouraged by the multinational companies involved in our student exchange
+                    programmes and internships.
+                </p>
+                <a href="blog.html" class="hero-btn red-btn">Explore now</a>
+            </div>
+            <div class="about-col">
+                <img src="images/about.jpg" alt="Image">
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <section class="footer">
+        <h4>Follow Us</h4>
+        <p>Get connected with us.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>Made by Avishek Sah</p>
+    </section>
+    <!--javascript for mobile-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
